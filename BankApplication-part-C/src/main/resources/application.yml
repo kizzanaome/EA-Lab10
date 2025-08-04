@@ -1,0 +1,15 @@
+app:
+  name: BankApp
+  version: 1.0
+  server:
+    url: http://localhost:8080
+    name: LocalServer
+  user:
+    firstname: John
+    lastname: Doe
+    username: johndoe123
+    password: password123
+    countries:
+      - Uganda
+      - Kenya
+      - Tanzania
