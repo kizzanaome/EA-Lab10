@@ -14,9 +14,8 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class Application {
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(Application.class, args);
-		Thread.currentThread().join();
 		IAccountService accountService = context.getBean(IAccountService.class);
 		// create 2 accounts;
 		accountService.createAccount(1263862, "Frank Brown");
